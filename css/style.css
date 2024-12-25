@@ -1,0 +1,588 @@
+:root {
+    --narinci: #FFB606;
+    --boz: #A5A5A5;
+}
+
+/* Section 1 CSS */
+.container-1 {
+    height: 100vh;
+    background-image: url(/assets/superwp.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .container-2 {
+        display: flex;  
+        justify-content: center;
+        position: fixed;
+        top: 50px;
+        left: 100px;
+        right: 100px;
+        z-index: 1000;
+
+        .esas-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 30px 90px;
+           
+            .esas-logo {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+               
+                p {
+                    font: 900 1.5em Helvetica, sans-serif;  
+                    padding-right: 50px;
+                }
+            }
+
+            nav {
+                ul {
+            
+                    display: flex;
+                    text-transform: uppercase;
+                    gap: 25px;
+                    padding-left: 50px;
+            
+                    a {
+                        transition: .1s ease-in-out;
+                        color: black;
+                        font: bold .9em Helvetica, sans-serif;
+                    }
+            
+                    a:hover {
+                        color: var(--narinci);
+                    }
+                }
+            }
+
+            
+            .bars {
+                visibility: hidden;
+            }
+        }
+
+        .esas-contact {
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            background-color: var(--narinci);
+            color: #FFF;
+        
+            i {
+                font-size: 1.5em;
+                margin-right: 10px;
+            }
+
+            span {
+                font: bold 1.1em Helvetica;
+            
+            }
+
+        }
+    }
+
+    
+    .container-text {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, 50%);
+        max-width: 600px;
+        font-size: 1em;
+        color: #FFF;
+
+        span {
+            background-color: var(--narinci);
+        }
+
+        h1 {
+            color: #FFF;
+            font: 0.5em 'Helvetica', sans-serif;
+            animation: efekt 1s ease-in-out forwards;
+            z-index: -1;
+        }
+    }
+
+    .cards-container {
+        position: absolute; 
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        transition: .2s ease-in-out;
+
+        .cards {
+            background-color: #1A1A1A;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            width: 350px;
+            margin: 0 25px;
+            padding: 50px;
+
+            img {
+                width: 50px;
+                margin-right: 15px;
+            }
+
+            small {
+                text-transform: uppercase;
+                font: bold .6em Helvatica, sans-serif;
+            }
+
+        }
+
+        .cards:hover {
+            background-color: var(--narinci);
+        }
+
+        .cards:hover .icon {
+            filter: brightness(100);
+        }
+    }
+}
+
+@keyframes efekt {
+    0% { 
+        font-size: 1.5em; 
+    }
+    40% { 
+        font-size: 2em; 
+    }
+    80% { 
+        font-size: 2.5em; 
+    }
+    100% { 
+        font-size: 3em; 
+    }
+}
+
+/* Section 2 */
+
+.popular-course{
+    height: 100vh;
+    padding: 100px;
+
+    hr {
+        width: 50px;
+        border: 2px solid var(--narinci);
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 25px 25px 50px 25px;
+    }
+
+    .courses-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+
+        .courses {
+            width: 350px;
+            height: 450px;
+            background-color: #F8F9FB;
+
+            h3 {
+                font-size: 1.3em;
+                text-align: center;
+                padding: 35px 35px 5px 35px;
+            }
+
+            .top {
+                width: 350px;
+            }
+
+            .otherp {
+                text-align: center;
+                color: var(--boz);
+                padding-bottom: 35px;
+            }
+
+            .course-alt {
+                display: flex;
+                align-items: stretch;
+
+                .course-left {
+                    flex: 4;
+                    display: flex;
+                    align-items: center;
+                    gap: 35px;
+                    background-color: #EAEBEC;
+                    padding: 15px;
+
+                    p {
+                        font: bold .9em Helvetica;
+
+                        span {
+                            color: var(--boz);
+                        }
+                    }
+                }   
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .course-right {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                background-color: var(--narinci);
+                padding: 15px;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+/* Section 3 CSS */
+
+.register-container {
+    display: flex;
+
+    .left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 2;
+        padding: 100px 50px;
+        background-color: var(--narinci);
+
+        h1 {
+            padding: 50px 0;
+            line-height: 1.5em;
+            color: #FFF;
+            width: 75%;
+            text-align: center;
+            margin: auto;
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            width: 75%;
+            margin: auto;
+            line-height: 2.5em;
+            padding-bottom: 50px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        
+        button {
+            font: bold .8em Helvetica;
+            text-transform: uppercase;
+            background-color: black;
+            border: 1px solid black;
+            color: #FFF;
+            padding: 15px 25px;
+            display: flex;
+            
+        }
+
+        
+        button:hover {
+            box-shadow: 0 10px 25px rgba(50, 50, 50, 0.208);    
+        }
+
+        span {
+            color: black;
+        }
+
+    }
+
+    .right-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 2;
+        padding: 100px 50px;
+        background-image: url(/assets/register.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        h1 {
+            padding: 50px 0;
+            text-align: center;
+        }
+    
+        
+        input {
+            width: 75%;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid transparent;
+        }
+    
+        input:nth-child(5) {
+            background-color: var(--narinci);
+            color: #FFF;
+            font-weight: 600;
+            transition: .2s ease-in-out;
+        }
+        
+        input:nth-child(5):hover {
+            box-shadow: 0 10px 25px rgba(50, 50, 50, 0.208);
+        }
+    
+        
+        input:focus {
+            outline: none;
+            border: 1px solid var(--narinci); 
+            box-shadow: 0 0 1px #ff9800; 
+        }
+    }
+    
+    .right-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.79);
+        z-index: 1;
+    }
+    
+    .right-container * {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+/* Section 4 CSS */
+
+.service-container{
+    height: 100vh;
+    padding: 100px;
+    margin: 0 50px;
+        hr {
+         width: 50px;
+         border: 2px solid var(--narinci);
+         margin: auto;
+     }
+        h1 {
+        text-align: center;
+        padding: 25px 25px 50px 25px;
+    }
+
+        .row {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 25px;
+    }
+
+        img {
+        width: 45px;
+        padding-bottom: 15px;
+    }
+
+        h2 {
+        padding: 15px 0;
+    }
+
+        p {
+        color: var(--boz);
+        line-height: 2em;
+        font-weight: 600;
+        font-size: .9em;
+    
+    }
+    
+}
+
+/* Section 5 CSS */
+
+.slider-container {
+    position: relative;
+    height: 90vh;
+    background-image: url(/assets/graduate.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;;
+
+    hr {
+        width: 50px;
+        border: 2px solid var(--narinci);
+        margin: auto;
+    }
+    h1 {
+       color: #FFF;
+       text-align: center;
+       padding: 25px 25px 50px 25px;
+   }
+
+    i {
+        color: var(--narinci);
+        top: 200px;
+    }
+    p {
+        top: 250px;
+        width: 60%;
+        color: #FFF;
+        text-align: center;
+        line-height: 2em;
+        font-size: .95em;
+    }
+    .image {
+        border-radius: 50%;
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        background-image: url(/assets/graduate.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 380px;
+    }
+
+    .texts {
+        top: 525px;
+    }
+    
+    .name {
+        text-transform: uppercase;
+        color: var(--narinci);
+        font-weight: 600;
+    }
+    .desc {
+        top: 550px;
+        font-weight: 600;
+        font-size: .85em;
+    }
+
+    .icon1 {
+        top: 647px;
+        padding: 7px;
+        border-radius: 50%;
+        border: 1px solid var(--narinci);
+        background-color: var(--narinci);
+    }
+
+    .icon2 {
+        top: 650px;
+        left: 733px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid #FFF;
+    }
+    
+    .icon3 {
+        top: 650px;
+        right: 733px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid #FFF;
+    }
+
+}
+
+.slider-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.678);
+    z-index: 1;
+}
+
+.slider-container * {
+    position: absolute;
+    z-index: 2;
+}
+
+/* Section 6 CSS */
+
+.upcoming-container {
+    height: 125vh;
+    padding: 100px;
+
+    hr {
+        width: 50px;
+        border: 2px solid var(--narinci);
+        margin: auto;
+    }
+    h1 {
+       color: black;
+       text-align: center;
+       padding: 25px 25px 50px 25px;
+   }
+
+   .container {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+        margin: 25px 50px;
+        .col {
+            .text {
+                border: 2px solid var(--narinci);
+                text-align: center;
+                padding: 30px;
+                margin: 0 25px;
+                color: var(--narinci);
+
+                p {
+                    font: bold 3em Helvetica, sans-serif;
+                }
+
+                span {
+                    font: bold 1em Helvetica, sans-serif;
+                }
+            }
+            img {
+                width: 350px;
+            }
+
+            a {
+                font: bold 1.2em Helvetica, sans-serif;
+                color: black;
+                margin: 25px;
+                transition: .15s ease-in-out;
+            }
+
+            a:hover {
+                color: var(--narinci);
+            }
+
+            .firstp {
+                font: bold .85em Helvetica, sans-serif;
+                margin: 10px 25px;
+            }
+
+            .secondp {
+                font: bold 1em Helvetica, sans-serif;
+                margin: 25px;
+                line-height: 2em;
+                color: var(--boz);
+            }
+        }
+    }
+   }
+
+}
+
+/* Footer CSS */
+
+footer {
+    height: 100vh;
+    background-color: #1A1A1A;
+}
