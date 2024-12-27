@@ -1,0 +1,157 @@
+/* 1220px (iPad Pro) */
+
+@media screen and (max-width: 1220px) {
+    .container-1 {
+        position: relative;
+
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+
+
+            .esas-header {
+                width: 100%;
+                margin: auto;
+
+                .bars {
+                    visibility: visible;
+                    color: black;
+                    font-size: 1.2em;
+                }
+            }
+            .esas-contact {
+                display: none;
+                visibility: hidden;
+            }
+
+            nav {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .cards-container {
+        top: 90%!important;
+        width: 90%!important;
+        display: flex;
+        flex-direction: column!important;
+        padding: 0;
+        margin: 0;
+
+        .cards {
+            width: 100%!important;
+        }
+    }
+
+    .container-text {
+        text-align: center;
+        width: 100%;
+    }
+    .popular-course {
+        height: 1000px;
+        position: absolute;
+        top: 1850px;
+        width: 100%;
+        margin: auto;
+        /* left: 230px; */
+
+        .courses-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 3500px;
+
+        .left-container {
+            width: 100%;
+        }
+
+        .right-container {
+            width: 100%;
+        }
+    }
+
+    .service-container {
+        position: absolute;
+        top: 4650px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .slider-container {
+        top: 4800px;
+        height: 750px;
+        
+    }
+
+    .upcoming-container {
+        position: absolute;
+        top: 6900px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            #image {
+                width: 100%;
+                margin: auto;
+            }
+
+            .col {
+                padding: 10px 0;
+                .text {
+                    width: 25%;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        position: absolute;
+        top: 9750px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .row {
+                width: 100%;
+                margin: auto;
+
+                .col{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+        .footer-text p {
+            width: 55%;
+        }
+    }
+}
